@@ -20,7 +20,8 @@ export default function About() {
 
             <p className="mt-6 text-gray-600 leading-relaxed">
               I am Marie Cielo B. Balbuena, a Bachelor of Technology
-              and Livelihood Education graduate from Bicol University.
+              and Livelihood Education (BTLEd) graduate, Major in
+              Information Communication Technology (ICT) from Bicol University.
             </p>
 
             <p className="mt-4 text-gray-600 leading-relaxed text-sm">
