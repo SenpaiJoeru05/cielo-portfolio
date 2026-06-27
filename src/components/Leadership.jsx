@@ -1,7 +1,7 @@
 export default function Leadership() {
   const roles = [
     {
-      image: 'img/sportsclub.jpg',
+      image: '/img/sportsclub.jpg',
       year: '2025',
       title: 'President',
       organization: 'BU Sports Club',
@@ -9,7 +9,7 @@ export default function Leadership() {
       skills: ['Team leadership', 'Event organization', 'Member coordination', 'Administrative work']
     },
     {
-      image: 'img/siklab.jpg',
+      image: '/img/siklab.jpg',
       year: '2025',
       title: 'President',
       organization: 'SIKLAB Dance Troupe',
@@ -23,27 +23,27 @@ export default function Leadership() {
       <div className="container">
         <div className="text-center reveal">
           <p className="eyebrow">LEADERSHIP</p>
-          <h2 className="font-display text-5xl font-bold">
+          <h2 className="font-display text-4xl font-bold">
             Leading organizations with
             <span className="grad-text"> purpose.</span>
           </h2>
-          <p className="mt-6 text-gray-500 max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-500 max-w-xl mx-auto text-sm">
             Leadership taught me how to communicate, organize, support teams, and make decisions.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 mt-20">
+        <div className="grid lg:grid-cols-2 gap-8 mt-12">
           {roles.map((role, index) => (
-            <div key={index} className="skill-card bg-white rounded-[35px] shadow-2xl overflow-hidden reveal">
-              <img src={role.image} className="w-full h-72 object-cover" alt={role.organization} />
-              <div className="p-8">
-                <span className="text-purple-600 text-sm uppercase">{role.year}</span>
-                <h3 className="font-display text-3xl font-bold mt-3">{role.title}</h3>
-                <h4 className="text-purple-600 mt-1">{role.organization}</h4>
-                <p className="mt-5 text-gray-600">{role.description}</p>
-                <ul className="mt-5 space-y-3">
+            <div key={index} className="skill-card bg-white rounded-[28px] shadow-xl overflow-hidden reveal">
+              <img src={role.image} className="w-full h-56 object-cover" alt={role.organization} />
+              <div className="p-6">
+                <span className="text-purple-600 text-xs uppercase tracking-widest">{role.year}</span>
+                <h3 className="font-display text-2xl font-bold mt-2">{role.title}</h3>
+                <h4 className="text-purple-600 mt-1 font-medium">{role.organization}</h4>
+                <p className="mt-4 text-gray-600 text-sm leading-relaxed">{role.description}</p>
+                <ul className="mt-4 space-y-2">
                   {role.skills.map((skill, i) => (
-                    <li key={i}>✓ {skill}</li>
+                    <li key={i} className="text-sm text-gray-700">✓ {skill}</li>
                   ))}
                 </ul>
               </div>

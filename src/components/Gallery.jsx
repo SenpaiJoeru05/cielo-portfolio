@@ -1,15 +1,21 @@
 export default function Gallery() {
   const images = [
-    'img/gallery/gallery1.jpg',
-    'img/gallery/gallery2.jpg',
-    'img/gallery/gallery3.jpg',
-    'img/gallery/gallery4.jpg',
-    'img/gallery/gallery5.jpg',
-    'img/gallery/gallery6.jpg',
+    '/img/gallery/gallery1.jpg',
+    '/img/gallery/gallery2.jpg',
+    '/img/gallery/gallery3.jpg',
+    '/img/gallery/gallery4.jpg',
+    '/img/gallery/gallery5.jpg',
+    '/img/gallery/gallery6.jpg',
+    '/img/gallery/gallery7.jpg',
+    '/img/gallery/gallery8.jpg',
+    '/img/gallery/gallery9.jpg',
+    '/img/gallery/gallery10.jpg',
+    '/img/gallery/gallery11.jpg',
+    '/img/gallery/gallery12.jpg',
+    '/img/gallery/gallery13.jpg',
   ];
 
-  // varying widths that repeat seamlessly when array is duplicated
-  const widths = [320, 240, 400, 280, 360, 220];
+  const widths = [300, 220, 360, 260, 320, 200, 340, 240, 280, 320, 260, 340, 220];
   const row2 = [...images].reverse();
 
   return (
@@ -17,17 +23,17 @@ export default function Gallery() {
       <div className="container">
         <div className="text-center reveal">
           <p className="eyebrow">GALLERY</p>
-          <h2 className="font-display text-5xl font-bold">
+          <h2 className="font-display text-4xl font-bold">
             Moments that shaped my
             <span className="grad-text"> journey.</span>
           </h2>
-          <p className="mt-6 text-gray-500">
+          <p className="mt-4 text-gray-500 text-sm">
             A collection of achievements and memories from my journey.
           </p>
         </div>
       </div>
 
-      <div className="mt-20 flex flex-col gap-4">
+      <div className="mt-12 flex flex-col gap-3">
         {/* Row 1 — scrolls left */}
         <div className="marquee-row">
           <div className="marquee-track">
