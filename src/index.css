@@ -268,7 +268,7 @@ body{
     display:flex;
     gap:16px;
     width:max-content;
-    animation:marquee-scroll 28s linear infinite;
+    animation:marquee-scroll 55s linear infinite;
 }
 
 .marquee-track:hover{

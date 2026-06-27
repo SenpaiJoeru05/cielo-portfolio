@@ -16,13 +16,9 @@ import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
-    // Scroll reveal animation
-    const reveals = document.querySelectorAll('.reveal');
-
     const revealElements = () => {
-      reveals.forEach(item => {
-        const top = item.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
+      document.querySelectorAll('.reveal').forEach(item => {
+        if (item.getBoundingClientRect().top < window.innerHeight - 100) {
           item.classList.add('active');
         }
       });

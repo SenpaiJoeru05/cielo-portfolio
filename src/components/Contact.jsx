@@ -47,7 +47,7 @@ export default function Contact() {
             </div>
             <div className="text-center">
               <p className="text-white font-semibold text-sm">Phone</p>
-              <p className="text-gray-400 text-xs mt-1">09123456789</p>
+              <p className="text-gray-400 text-xs mt-1">09619434430</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 reveal">
           <a
             href="mailto:mariecielobalbune@gmail.com"
-            className="btn-primary"
+            className="btn-primary w-full sm:w-auto justify-center"
           >
             <i className="fa-solid fa-envelope text-sm"></i>
             Send Email
@@ -77,7 +77,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/marie-cielo-balbuena-74017b366/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2.5 px-7 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5"
+            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5"
             style={{
               background: 'rgba(0,119,181,0.10)',
               border: '1px solid rgba(0,119,181,0.35)',
