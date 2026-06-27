@@ -23,7 +23,7 @@ export default function Education() {
       icon: <BUIcon />,
       school: 'Bicol University',
       degree: 'Bachelor of Technology and Livelihood Education',
-      detail: 'Major in Technology and Livelihood Education',
+      detail: 'Major in Information Communication Technology (ICT)',
       location: 'Legazpi City, Albay',
       year: '2022 – 2026',
       accent: '#7c3aed',
@@ -99,7 +99,7 @@ export default function Education() {
 
                 {/* glowing dot */}
                 <div
-                  className="absolute -left-8 lg:-left-[46px] top-7 w-3.5 h-3.5 rounded-full border-2 border-[#120d1d]"
+                  className="absolute -left-8 lg:-left-[46px] top-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full border-2 border-[#120d1d]"
                   style={{ background: s.accent, boxShadow: `0 0 10px 3px ${s.glow}` }}
                 ></div>
 

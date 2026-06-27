@@ -34,7 +34,7 @@ export default function Experience() {
     },
     {
       icon: <LogoImg src="/img/Refreshing-grace-logo.jpg" alt="Refreshing Grace" bg="#fff" />,
-      type: 'Café & Beverage Service',
+      type: 'Food & Beverage · Customer Service',
       role: 'Barista',
       company: 'Refreshing Grace',
       period: 'Apr 2023 – Jan 2024',
@@ -42,8 +42,8 @@ export default function Experience() {
       gradient: 'linear-gradient(135deg, #92400e 0%, #f59e0b 50%, #fbbf24 100%)',
       accentLight: '#fffbeb',
       accentText: '#b45309',
-      description: 'Prepared and served a variety of coffee and specialty beverages with consistency and quality. Maintained high standards of customer satisfaction, managed orders accurately, and supported smooth daily café operations.',
-      skills: ['Barista Skills', 'Customer Service', 'Order Management', 'Teamwork', 'Hospitality'],
+      description: 'Prepared and served coffee, beverages, and food items with consistency and quality in a fast-paced service environment. Delivered attentive customer service, handled orders accurately, resolved customer concerns, and contributed to a welcoming and efficient daily operation.',
+      skills: ['Barista Skills', 'Customer Service', 'Food & Beverage', 'Order Management', 'Teamwork', 'Hospitality'],
     },
   ];
 

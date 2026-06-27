@@ -13,9 +13,11 @@ export default function Gallery() {
     '/img/gallery/gallery11.jpg',
     '/img/gallery/gallery12.jpg',
     '/img/gallery/gallery13.jpg',
+    '/img/gallery/gallery14.jpg',
+    '/img/gallery/gallery15.jpg',
   ];
 
-  const widths = [300, 220, 360, 260, 320, 200, 340, 240, 280, 320, 260, 340, 220];
+  const widths = [300, 220, 360, 260, 320, 200, 340, 240, 280, 320, 260, 340, 220, 300, 260];
   const row2 = [...images].reverse();
 
   return (
