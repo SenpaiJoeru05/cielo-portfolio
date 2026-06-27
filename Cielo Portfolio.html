@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Marie Cielo B. Balbuena | Leadership • Discipline • Service</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<style>
+
+:root{
+    --void:#0c0814;
+    --deep:#171026;
+    --card:#1e1531;
+    --violet:#7c3aed;
+    --pink:#ec4899;
+    --gold:#f59e0b;
+    --light:#f4f1ff;
+    --text:#d8d2f0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    background:var(--void);
+    color:white;
+    overflow-x:hidden;
+}
+
+.font-display{
+    font-family:'Space Grotesk',sans-serif;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--violet);
+    border-radius:20px;
+}
+
+::selection{
+    background:var(--violet);
+    color:white;
+}
+
+.grad-text{
+    background:linear-gradient(
+        90deg,
+        var(--violet),
+        var(--pink),
+        var(--gold)
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.blob-field{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+.blob{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.4;
+}
+
+.blob1{
+    width:500px;
+    height:500px;
+    background:#7c3aed;
+    top:-150px;
+    left:-100px;
+    animation:float1 15s infinite ease-in-out;
+}
+
+.blob2{
+    width:400px;
+    height:400px;
+    background:#ec4899;
+    right:-100px;
+    bottom:-100px;
+    animation:float2 18s infinite ease-in-out;
+}
+
+.blob3{
+    width:350px;
+    height:350px;
+    background:#9333ea;
+    top:40%;
+    right:20%;
+    animation:float3 20s infinite ease-in-out;
+}
+
+@keyframes float1{
+    50%{
+        transform:
+        translate(60px,40px)
+        scale(1.1);
+    }
+}
+
+@keyframes float2{
+    50%{
+        transform:
+        translate(-60px,-60px)
+        scale(.9);
+    }
+}
+
+@keyframes float3{
+    50%{
+        transform:
+        translate(40px,-40px)
+        scale(1.15);
+    }
+}
+
+.glass{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.section{
+    padding:120px 20px;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:.8s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.eyebrow{
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    color:#a855f7;
+    margin-bottom:20px;
+}
+
+.btn-primary{
+    background:linear-gradient(
+        135deg,
+        var(--violet),
+        var(--pink)
+    );
+
+    padding:16px 35px;
+    border-radius:100px;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.2);
+    padding:16px 35px;
+    border-radius:100px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:rgba(255,255,255,.08);
+}
+
+.side-nav{
+    position:fixed;
+    right:30px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:999;
+}
+
+.side-nav a{
+    width:10px;
+    height:10px;
+    display:block;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    margin:15px 0;
+    transition:.3s;
+}
+
+.side-nav a.active{
+    background:#a855f7;
+    transform:scale(1.5);
+}
+
+.hero-image{
+    border-radius:40px;
+    overflow:hidden;
+    box-shadow:
+    0 40px 80px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.orbit{
+    position:absolute;
+    inset:-30px;
+    border-radius:50%;
+    border:1px dashed rgba(255,255,255,.2);
+    animation:spin 30s linear infinite;
+}
+
+.orbit2{
+    inset:-55px;
+    animation-direction:reverse;
+    animation-duration:45s;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.timeline-line{
+    position:absolute;
+    left:50%;
+    width:3px;
+    top:0;
+    bottom:0;
+    background:linear-gradient(
+        to bottom,
+        var(--violet),
+        var(--pink)
+    );
+}
+
+.skill-card{
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:25px;
+}
+
+.gallery-item img{
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.cert-tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.cert-tab{
+    padding:12px 30px;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius:100px;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+    font-size:1rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.cert-tab:hover{
+    border-color:#a855f7;
+}
+
+.cert-tab.active{
+    background:linear-gradient(135deg,#7c3aed,#ec4899);
+    border-color:#a855f7;
+}
+
+.cert-content{
+    display:none;
+}
+
+.cert-content.active{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    animation:fadeIn .5s ease-in;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #7c3aed;
+}
+
+.swiper-pagination-bullet {
+    background: #7c3aed;
+}
+
+@media(max-width:768px){
+
+    .side-nav{
+        display:none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="side-nav">
+    <a href="#hero"></a>
+    <a href="#about"></a>
+    <a href="#timeline"></a>
+    <a href="#leadership"></a>
+    <a href="#athlete"></a>
+    <a href="#experience"></a>
+    <a href="#skills"></a>
+    <a href="#contact"></a>
+</nav>
+<!-- HERO SECTION -->
+
+<section id="hero"
+class="relative min-h-screen flex items-center overflow-hidden">
+
+    <div class="blob-field">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <div class="container relative z-10 px-6 py-24">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- LEFT -->
+
+            <div class="text-center lg:text-left reveal">
+
+                <p class="eyebrow">
+                    LEADERSHIP • DISCIPLINE • SERVICE
+                </p>
+
+                <h1 class="font-display font-bold leading-none text-6xl lg:text-8xl">
+
+                    Marie Cielo
+
+                    <span class="grad-text block">
+                        Balbuena
+                    </span>
+
+                </h1>
+
+                <div class="mt-8">
+
+                    <p id="roleCycle"
+                    class="text-2xl lg:text-3xl text-white font-medium">
+                        Future HR Professional
+                    </p>
+
+                </div>
+
+                <p class="mt-8 text-lg text-gray-300 max-w-xl leading-relaxed">
+
+                    A fresh graduate, student leader, and university athlete
+                    committed to bringing organization, discipline,
+                    and people-centered service into Human Resources,
+                    Administrative Support, and Virtual Assistance.
+
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-10 justify-center lg:justify-start">
+
+                    <a href="#about"
+                    class="btn-primary">
+                        Explore My Journey
+                    </a>
+
+                    <a href="#contact"
+                    class="btn-outline">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <!-- STATS -->
+
+                <div class="grid grid-cols-3 gap-5 mt-16">
+
+                    <div class="glass rounded-3xl p-5">
+
+                        <h2 class="text-3xl font-bold grad-text">
+                            2
+                        </h2>
+
+                        <p class="text-xs uppercase text-gray-400 mt-2">
+                            Organizations Led
+                        </p>
+
+                    </div>
+
+                    <div class="glass rounded-3xl p-5">
+
+                        <h2 class="text-3xl font-bold grad-text">
+                            8+
+                        </h2>
+
+                        <p class="text-xs uppercase text-gray-400 mt-2">
+                            Years Athlete
+                        </p>
+
+                    </div>
+
+                    <div class="glass rounded-3xl p-5">
+
+                        <h2 class="text-3xl font-bold grad-text">
+                            2026
+                        </h2>
+
+                        <p class="text-xs uppercase text-gray-400 mt-2">
+                            Graduate
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="flex justify-center reveal">
+
+                <div id="tiltPhoto"
+                class="relative w-80 sm:w-96 lg:w-[500px]">
+
+                    <div class="orbit"></div>
+
+                    <div class="orbit orbit2"></div>
+
+                    <div class="hero-image relative">
+
+                        <img
+                        src="img/profile.jpg"
+                        alt="Marie Cielo Balbuena"
+                        class="w-full aspect-[4/5] object-cover">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent">
+                        </div>
+
+                    </div>
+
+                    <!-- FLOATING CARD -->
+
+                    <div class="glass absolute -left-10 top-10 rounded-2xl p-4">
+
+                        <p class="font-semibold">
+                            👑 President
+                        </p>
+
+                        <p class="text-sm text-gray-400">
+                            BU Sports Club
+                        </p>
+
+                    </div>
+
+                    <div class="glass absolute -right-8 bottom-16 rounded-2xl p-4">
+
+                        <p class="font-semibold">
+                            💃 President
+                        </p>
+
+                        <p class="text-sm text-gray-400">
+                            SIKLAB
+                        </p>
+
+                    </div>
+
+                    <div class="glass absolute left-8 bottom-0 rounded-2xl p-4">
+
+                        <p class="font-semibold">
+                            🥋 University Athlete
+                        </p>
+
+                        <p class="text-sm text-gray-400">
+                            Arnis Team
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="section bg-white text-gray-800">
+
+    <div class="container">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <div class="reveal">
+
+                <div class="rounded-[40px] overflow-hidden shadow-2xl">
+
+                    <img src="img/about.jpg"
+                    class="w-full aspect-[4/5] object-cover">
+
+                </div>
+
+            </div>
+
+            <div class="reveal">
+
+                <p class="eyebrow">
+                    ABOUT ME
+                </p>
+
+                <h2 class="font-display text-5xl font-bold leading-tight">
+
+                    Leading with
+                    <span class="grad-text">
+                        discipline,
+                    </span>
+
+                    service, and organization.
+
+                </h2>
+
+                <p class="mt-8 text-gray-600 leading-relaxed text-lg">
+
+                    I am Marie Cielo B. Balbuena, a Bachelor of Technology
+                    and Livelihood Education graduate from Bicol University.
+
+                </p>
+
+                <p class="mt-5 text-gray-600 leading-relaxed">
+
+                    As a student leader, university athlete, and customer
+                    service professional, I developed the ability to lead,
+                    communicate, organize, and support others.
+
+                </p>
+
+                <p class="mt-5 text-gray-600 leading-relaxed">
+
+                    Through my leadership roles as President of the
+                    BU Sports Club and SIKLAB Dance Troupe, I gained
+                    valuable experience in team management, event
+                    coordination, communication, and organizational work.
+
+                </p>
+
+                <p class="mt-5 text-gray-600 leading-relaxed">
+
+                    Today, I aspire to build a career in Human Resources,
+                    Administration, and Virtual Assistance where I can
+                    contribute my leadership, discipline, and passion
+                    for helping people.
+
+                </p>
+
+                <div class="grid grid-cols-3 gap-4 mt-10">
+
+                    <div class="bg-purple-50 rounded-2xl p-5 text-center">
+
+                        <h3 class="text-3xl font-bold text-purple-600">
+                            2026
+                        </h3>
+
+                        <p class="text-sm mt-2">
+                            Graduate
+                        </p>
+
+                    </div>
+
+                    <div class="bg-purple-50 rounded-2xl p-5 text-center">
+
+                        <h3 class="text-3xl font-bold text-purple-600">
+                            2
+                        </h3>
+
+                        <p class="text-sm mt-2">
+                            Leadership Roles
+                        </p>
+
+                    </div>
+
+                    <div class="bg-purple-50 rounded-2xl p-5 text-center">
+
+                        <h3 class="text-3xl font-bold text-purple-600">
+                            8+
+                        </h3>
+
+                        <p class="text-sm mt-2">
+                            Years Athlete
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section id="timeline"
+class="section relative overflow-hidden bg-[#120d1d]">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                MY JOURNEY
+            </p>
+
+            <h2 class="font-display text-5xl font-bold text-white">
+
+                The journey that shaped
+
+                <span class="grad-text">
+                    who I am today.
+                </span>
+
+            </h2>
+
+            <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+
+                From athlete to student leader, every chapter built
+                the discipline, resilience, and leadership that I now
+                bring into my future career.
+
+            </p>
+
+        </div>
+
+        <div class="relative mt-24">
+
+            <div class="timeline-line hidden lg:block"></div>
+
+            <!-- ITEM -->
+
+            <div class="grid lg:grid-cols-2 gap-10 mb-20 reveal">
+
+                <div class="text-right pr-16 hidden lg:block">
+
+                    <h3 class="text-3xl font-bold text-white">
+                        2018
+                    </h3>
+
+                    <p class="text-gray-400 mt-2">
+                        Started my athletic journey in Arnis.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-3xl p-8">
+
+                    <span class="text-purple-400 text-sm uppercase">
+                        Athletic Beginning
+                    </span>
+
+                    <h3 class="font-display text-2xl mt-3">
+                        Started Competing in Arnis
+                    </h3>
+
+                    <p class="text-gray-400 mt-4">
+
+                        Began training and competing in Arnis during
+                        high school, developing discipline,
+                        perseverance, and teamwork.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="grid lg:grid-cols-2 gap-10 mb-20 reveal">
+
+                <div class="glass rounded-3xl p-8">
+
+                    <span class="text-purple-400 text-sm uppercase">
+                        University Journey
+                    </span>
+
+                    <h3 class="font-display text-2xl mt-3">
+                        Entered Bicol University
+                    </h3>
+
+                    <p class="text-gray-400 mt-4">
+
+                        Started taking Bachelor of Technology and
+                        Livelihood Education and became actively
+                        involved in student organizations.
+
+                    </p>
+
+                </div>
+
+                <div class="pl-16 hidden lg:block">
+
+                    <h3 class="text-3xl font-bold text-white">
+                        2022
+                    </h3>
+
+                    <p class="text-gray-400 mt-2">
+                        Began university education.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="grid lg:grid-cols-2 gap-10 mb-20 reveal">
+
+                <div class="text-right pr-16 hidden lg:block">
+
+                    <h3 class="text-3xl font-bold text-white">
+                        2025
+                    </h3>
+
+                    <p class="text-gray-400 mt-2">
+                        Leadership roles.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-3xl p-8">
+
+                    <span class="text-purple-400 text-sm uppercase">
+                        Leadership
+                    </span>
+
+                    <h3 class="font-display text-2xl mt-3">
+                        Organization President
+                    </h3>
+
+                    <p class="text-gray-400 mt-4">
+
+                        Became President of the BU Sports Club and
+                        President of SIKLAB Dance Troupe, leading
+                        members and organizing activities.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="grid lg:grid-cols-2 gap-10 mb-20 reveal">
+
+                <div class="glass rounded-3xl p-8">
+
+                    <span class="text-purple-400 text-sm uppercase">
+                        Graduation
+                    </span>
+
+                    <h3 class="font-display text-2xl mt-3">
+                        Completed BTLEd Degree
+                    </h3>
+
+                    <p class="text-gray-400 mt-4">
+
+                        Graduated from Bicol University and prepared
+                        to pursue a professional career in Human
+                        Resources, Administration, and Virtual
+                        Assistance.
+
+                    </p>
+
+                </div>
+
+                <div class="pl-16 hidden lg:block">
+
+                    <h3 class="text-3xl font-bold text-white">
+                        2026
+                    </h3>
+
+                    <p class="text-gray-400 mt-2">
+                        New beginning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="leadership"
+class="section bg-white text-gray-800">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                LEADERSHIP
+            </p>
+
+            <h2 class="font-display text-5xl font-bold">
+
+                Leading organizations with
+
+                <span class="grad-text">
+                    purpose.
+                </span>
+
+            </h2>
+
+            <p class="mt-6 text-gray-500 max-w-2xl mx-auto">
+
+                Leadership taught me how to communicate, organize,
+                support teams, and make decisions.
+
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10 mt-20">
+
+            <!-- SPORTS CLUB -->
+
+            <div class="skill-card bg-white rounded-[35px] shadow-2xl overflow-hidden reveal">
+
+                <img src="img/sportsclub.jpg"
+                class="w-full h-72 object-cover">
+
+                <div class="p-8">
+
+                    <span class="text-purple-600 text-sm uppercase">
+                        2025
+                    </span>
+
+                    <h3 class="font-display text-3xl font-bold mt-3">
+                        President
+                    </h3>
+
+                    <h4 class="text-purple-600 mt-1">
+                        BU Sports Club
+                    </h4>
+
+                    <p class="mt-5 text-gray-600">
+
+                        Led the organization through planning,
+                        communication, coordination, and support
+                        activities for student-athletes.
+
+                    </p>
+
+                    <ul class="mt-5 space-y-3">
+
+                        <li>✓ Team leadership</li>
+                        <li>✓ Event organization</li>
+                        <li>✓ Member coordination</li>
+                        <li>✓ Administrative work</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- SIKLAB -->
+
+            <div class="skill-card bg-white rounded-[35px] shadow-2xl overflow-hidden reveal">
+
+                <img src="img/siklab.jpg"
+                class="w-full h-72 object-cover">
+
+                <div class="p-8">
+
+                    <span class="text-purple-600 text-sm uppercase">
+                        2025
+                    </span>
+
+                    <h3 class="font-display text-3xl font-bold mt-3">
+                        President
+                    </h3>
+
+                    <h4 class="text-purple-600 mt-1">
+                        SIKLAB Dance Troupe
+                    </h4>
+
+                    <p class="mt-5 text-gray-600">
+
+                        Managed organization activities, coordinated
+                        members, and supported programs and events.
+
+                    </p>
+
+                    <ul class="mt-5 space-y-3">
+
+                        <li>✓ Team management</li>
+                        <li>✓ Event planning</li>
+                        <li>✓ Communication</li>
+                        <li>✓ Leadership skills</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ATHLETE SECTION -->
+
+<section id="athlete"
+class="section bg-[#120d1d] overflow-hidden">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                UNIVERSITY ATHLETE
+            </p>
+
+            <h2 class="font-display text-5xl font-bold text-white">
+
+                Discipline forged through
+
+                <span class="grad-text">
+                    Arnis.
+                </span>
+
+            </h2>
+
+            <p class="text-gray-400 mt-6 max-w-3xl mx-auto">
+
+                Beyond academics and leadership, sports became one of
+                the strongest foundations of my character. Arnis taught
+                me resilience, discipline, focus, teamwork, and
+                perseverance.
+
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center mt-20">
+
+            <!-- IMAGE -->
+
+            <div class="reveal">
+
+                <div class="rounded-[40px] overflow-hidden shadow-2xl">
+
+                    <img src="img/arnis.jpg"
+                    class="w-full h-[550px] object-cover">
+
+                </div>
+
+            </div>
+
+            <!-- CONTENT -->
+
+            <div class="reveal">
+
+                <p class="text-purple-400 uppercase text-sm tracking-[4px]">
+                    Bicol University Arnis Team
+                </p>
+
+                <h3 class="font-display text-4xl text-white font-bold mt-4">
+
+                    Years of dedication,
+                    training, and competition.
+
+                </h3>
+
+                <p class="text-gray-400 mt-8 leading-relaxed">
+
+                    As a member of the Bicol University Arnis Team,
+                    I represented the university in various competitions,
+                    continuously developing discipline, confidence,
+                    and resilience.
+
+                </p>
+
+                <p class="text-gray-400 mt-5 leading-relaxed">
+
+                    My athletic journey started during high school and
+                    continued throughout college, allowing me to earn
+                    valuable experiences and achievements both inside
+                    and outside the university.
+
+                </p>
+
+                <div class="grid grid-cols-2 gap-5 mt-10">
+
+                    <div class="glass rounded-3xl p-6">
+
+                        <h4 class="text-4xl font-bold grad-text">
+                            8+
+                        </h4>
+
+                        <p class="text-gray-400 mt-2">
+                            Years in Arnis
+                        </p>
+
+                    </div>
+
+                    <div class="glass rounded-3xl p-6">
+
+                        <h4 class="text-4xl font-bold grad-text">
+                            15+
+                        </h4>
+
+                        <p class="text-gray-400 mt-2">
+                            Medals Earned
+                        </p>
+
+                    </div>
+
+                    <div class="glass rounded-3xl p-6">
+
+                        <h4 class="text-4xl font-bold grad-text">
+                            10+
+                        </h4>
+
+                        <p class="text-gray-400 mt-2">
+                            Competitions
+                        </p>
+
+                    </div>
+
+                    <div class="glass rounded-3xl p-6">
+
+                        <h4 class="text-4xl font-bold grad-text">
+                            BU
+                        </h4>
+
+                        <p class="text-gray-400 mt-2">
+                            University Representative
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section class="section bg-white text-gray-800">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                ACHIEVEMENTS
+            </p>
+
+            <h2 class="font-display text-5xl font-bold">
+
+                Accomplishments that shaped
+                my
+
+                <span class="grad-text">
+                    journey.
+                </span>
+
+            </h2>
+
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mt-20">
+
+            <div class="skill-card bg-purple-50 rounded-[35px] p-10">
+
+                <div class="text-5xl">
+                    👑
+                </div>
+
+                <h3 class="font-display text-2xl mt-6 font-bold">
+                    Organization President
+                </h3>
+
+                <p class="mt-4 text-gray-600">
+
+                    Served as President of two accredited student
+                    organizations at Bicol University.
+
+                </p>
+
+            </div>
+
+            <div class="skill-card bg-purple-50 rounded-[35px] p-10">
+
+                <div class="text-5xl">
+                    🥋
+                </div>
+
+                <h3 class="font-display text-2xl mt-6 font-bold">
+                    University Athlete
+                </h3>
+
+                <p class="mt-4 text-gray-600">
+
+                    Represented Bicol University in Arnis competitions
+                    and athletic events.
+
+                </p>
+
+            </div>
+
+            <div class="skill-card bg-purple-50 rounded-[35px] p-10">
+
+                <div class="text-5xl">
+                    🎓
+                </div>
+
+                <h3 class="font-display text-2xl mt-6 font-bold">
+                    Graduate
+                </h3>
+
+                <p class="mt-4 text-gray-600">
+
+                    Successfully completed Bachelor of Technology and
+                    Livelihood Education at Bicol University.
+
+                </p>
+
+            </div>
+
+            <div class="skill-card bg-purple-50 rounded-[35px] p-10">
+
+                <div class="text-5xl">
+                    🏅
+                </div>
+
+                <h3 class="font-display text-2xl mt-6 font-bold">
+                    Medalist
+                </h3>
+
+                <p class="mt-4 text-gray-600">
+
+                    Earned various medals and recognitions throughout
+                    years of athletic competition.
+
+                </p>
+
+            </div>
+
+            <div class="skill-card bg-purple-50 rounded-[35px] p-10">
+
+                <div class="text-5xl">
+                    💃
+                </div>
+
+                <h3 class="font-display text-2xl mt-6 font-bold">
+                    Dance Leader
+                </h3>
+
+                <p class="mt-4 text-gray-600">
+
+                    Led SIKLAB Dance Troupe through organizational
+                    activities and performances.
+
+                </p>
+
+            </div>
+
+            <div class="skill-card bg-purple-50 rounded-[35px] p-10">
+
+                <div class="text-5xl">
+                    🤝
+                </div>
+
+                <h3 class="font-display text-2xl mt-6 font-bold">
+                    Leadership Skills
+                </h3>
+
+                <p class="mt-4 text-gray-600">
+
+                    Developed communication, organization, and people
+                    management skills through leadership roles.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education" class="section bg-[#120d1d]">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                EDUCATION
+            </p>
+
+            <h2 class="font-display text-5xl text-white font-bold">
+
+                Academic
+
+                <span class="grad-text">
+                    Foundation
+                </span>
+
+            </h2>
+
+        </div>
+
+        <div class="glass rounded-[40px] p-12 mt-20 reveal">
+
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+
+                <div>
+
+                    <p class="text-purple-400 uppercase text-sm">
+                        Bicol University
+                    </p>
+
+                    <h3 class="text-4xl text-white font-display font-bold mt-3">
+                        Bachelor of Technology and Livelihood Education
+                    </h3>
+
+                    <p class="text-gray-400 mt-4">
+                        Major in Technology and Livelihood Education
+                    </p>
+
+                </div>
+
+                <div class="mt-8 lg:mt-0">
+
+                    <div class="bg-purple-600 px-6 py-4 rounded-2xl">
+
+                        <h4 class="text-3xl font-bold text-white">
+                            2026
+                        </h4>
+
+                        <p class="text-white/70">
+                            Graduate
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="section bg-white text-gray-800">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                EXPERIENCE
+            </p>
+
+            <h2 class="font-display text-5xl font-bold">
+
+                Professional
+
+                <span class="grad-text">
+                    Experience
+                </span>
+
+            </h2>
+
+        </div>
+
+        <div class="mt-20">
+
+            <div class="bg-white shadow-2xl rounded-[40px] p-10 reveal">
+
+                <div class="flex flex-col lg:flex-row justify-between">
+
+                    <div>
+
+                        <p class="text-purple-600 uppercase text-sm">
+                            Customer Service
+                        </p>
+
+                        <h3 class="font-display text-4xl font-bold mt-3">
+                            Potato Corner
+                        </h3>
+
+                    </div>
+
+                    <div class="mt-5 lg:mt-0">
+
+                        <span class="bg-purple-100 text-purple-700 px-5 py-3 rounded-full">
+                            Example Dates
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-8 text-gray-600 leading-relaxed">
+
+                    Provided quality customer service while maintaining
+                    professionalism, efficiency, and effective
+                    communication with customers.
+
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 mt-10">
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        ✓ Customer Service
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        ✓ Communication Skills
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        ✓ Team Collaboration
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        ✓ Problem Solving
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section bg-[#120d1d]">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                SKILLS
+            </p>
+
+            <h2 class="font-display text-5xl text-white font-bold">
+
+                Skills for HR,
+                Administration, and
+
+                <span class="grad-text">
+                    Virtual Assistance
+                </span>
+
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+
+            <div class="glass rounded-[35px] p-8 skill-card">
+
+                <i class="fa-solid fa-users text-4xl text-purple-400"></i>
+
+                <h3 class="text-2xl font-bold mt-6 text-white">
+                    Communication
+                </h3>
+
+                <p class="text-gray-400 mt-4">
+                    Effective verbal and written communication skills.
+                </p>
+
+            </div>
+
+            <div class="glass rounded-[35px] p-8 skill-card">
+
+                <i class="fa-solid fa-calendar text-4xl text-purple-400"></i>
+
+                <h3 class="text-2xl font-bold mt-6 text-white">
+                    Organization
+                </h3>
+
+                <p class="text-gray-400 mt-4">
+                    Scheduling, planning, and administrative support.
+                </p>
+
+            </div>
+
+            <div class="glass rounded-[35px] p-8 skill-card">
+
+                <i class="fa-solid fa-user-group text-4xl text-purple-400"></i>
+
+                <h3 class="text-2xl font-bold mt-6 text-white">
+                    Leadership
+                </h3>
+
+                <p class="text-gray-400 mt-4">
+                    Team management and organizational leadership.
+                </p>
+
+            </div>
+
+            <div class="glass rounded-[35px] p-8 skill-card">
+
+                <i class="fa-solid fa-computer text-4xl text-purple-400"></i>
+
+                <h3 class="text-2xl font-bold mt-6 text-white">
+                    Digital Tools
+                </h3>
+
+                <p class="text-gray-400 mt-4">
+                    Microsoft Office and Google Workspace.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5 mt-14">
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Microsoft Office
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Google Workspace
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Canva
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Data Entry
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Scheduling
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Administrative Support
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Team Leadership
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Customer Service
+            </div>
+
+            <div class="glass p-5 rounded-2xl text-center text-white">
+                Time Management
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="section bg-white text-gray-800">
+
+    <div class="container">
+
+        <div class="text-center reveal">
+
+            <p class="eyebrow">
+                GALLERY
+            </p>
+
+            <h2 class="font-display text-5xl font-bold">
+
+                Moments that shaped my
+
+                <span class="grad-text">
+                    journey.
+                </span>
+
+            </h2>
+
+            <p class="mt-6 text-gray-500">
+                A collection of achievements and memories from my journey.
+            </p>
+
+        </div>
+
+        <div class="mt-20">
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-item shadow-xl w-full">
+                            <img src="img/gallery/gallery1.jpg"
+                            class="w-full h-80 object-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item shadow-xl w-full">
+                            <img src="img/gallery/gallery2.jpg"
+                            class="w-full h-80 object-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item shadow-xl w-full">
+                            <img src="img/gallery/gallery3.jpg"
+                            class="w-full h-80 object-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item shadow-xl w-full">
+                            <img src="img/gallery/gallery4.jpg"
+                            class="w-full h-80 object-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item shadow-xl w-full">
+                            <img src="img/gallery/gallery5.jpg"
+                            class="w-full h-80 object-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item shadow-xl w-full">
+                            <img src="img/gallery/gallery6.jpg"
+                            class="w-full h-80 object-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-6"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CERTIFICATES -->
+<section class="section bg-[#120d1d]">
+    <div class="container">
+        <div class="text-center reveal">
+            <p class="eyebrow">CERTIFICATES</p>
+            <h2 class="font-display text-5xl text-white font-bold">
+                Certifications & <span class="grad-text">Achievements</span>
+            </h2>
+            <p class="text-gray-400 mt-4">Professional development and recognition</p>
+        </div>
+        
+        <!-- TAB BUTTONS -->
+        <div class="cert-tabs reveal">
+            <button class="cert-tab active" data-tab="school">
+                🎓 School Certificates
+            </button>
+            <button class="cert-tab" data-tab="online">
+                💻 Online Courses
+            </button>
+        </div>
+
+        <!-- SCHOOL CERTIFICATES TAB -->
+        <div class="cert-content active" id="school-tab">
+            
+            <div class="reveal">
+                <div class="glass rounded-3xl overflow-hidden group">
+                    <img src="img/certificates/sports-club-org-cert.jpg" 
+                         alt="BU Sports Club Organization Certificate"
+                         class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <p class="text-center text-white mt-4 font-medium px-4">
+                    BU Sports Club President
+                </p>
+            </div>
+
+            <div class="reveal">
+                <div class="glass rounded-3xl overflow-hidden group">
+                    <img src="img/certificates/siklab-cert.jpg" 
+                         alt="SIKLAB Dance Troupe Certificate"
+                         class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <p class="text-center text-white mt-4 font-medium px-4">
+                    SIKLAB Dance Troupe President
+                </p>
+            </div>
+
+            <div class="reveal">
+                <div class="glass rounded-3xl overflow-hidden group">
+                    <img src="img/certificates/SLAC-cert.jpg" 
+                         alt="SLAC Certificate"
+                         class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <p class="text-center text-white mt-4 font-medium px-4">
+                    SLAC Certificate
+                </p>
+            </div>
+
+            <div class="reveal">
+                <div class="glass rounded-3xl overflow-hidden group">
+                    <img src="img/certificates/pre-service-cert.jpg" 
+                         alt="Pre-Service Certificate"
+                         class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <p class="text-center text-white mt-4 font-medium px-4">
+                    Pre-Service Training Certificate
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ONLINE COURSES TAB -->
+        <div class="cert-content" id="online-tab">
+            
+            <div class="reveal">
+                <div class="glass rounded-3xl overflow-hidden group">
+                    <img src="img/certificates/Executive Search-Specialist-Certification.jpg" 
+                         alt="Executive Search Specialist"
+                         class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <p class="text-center text-white mt-4 font-medium px-4">
+                    Executive Search Specialist Certification
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="contact"
+class="section bg-gradient-to-br from-purple-700 to-pink-600">
+
+    <div class="container text-center">
+
+        <p class="eyebrow text-white">
+            CONTACT
+        </p>
+
+        <h2 class="font-display text-5xl font-bold text-white">
+
+            Let's work together.
+        </h2>
+
+        <p class="text-white/80 mt-6 max-w-2xl mx-auto">
+
+            I am open to opportunities in Human Resources,
+            Administration, Customer Service, and Virtual Assistance.
+
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+
+            <div class="glass rounded-3xl p-8">
+
+                <i class="fa-solid fa-envelope text-4xl"></i>
+
+                <h3 class="mt-5 text-xl">
+                    Email
+                </h3>
+
+                <p class="mt-3 text-white/70">
+                    balbuenanationmariecielo@gmail.com
+                </p>
+
+            </div>
+
+            <div class="glass rounded-3xl p-8">
+
+                <i class="fa-solid fa-phone text-4xl"></i>
+
+                <h3 class="mt-5 text-xl">
+                    Phone
+                </h3>
+
+                <p class="mt-3 text-white/70">
+                    09123456789
+                </p>
+
+            </div>
+
+            <div class="glass rounded-3xl p-8">
+
+                <i class="fa-solid fa-location-dot text-4xl"></i>
+
+                <h3 class="mt-5 text-xl">
+                    Location
+                </h3>
+
+                <p class="mt-3 text-white/70">
+                    Ligao City, Albay
+                </p>
+
+            </div>
+
+        </div>
+
+        <a href="mailto:balbuenanationmariecielo@gmail.com"
+        class="inline-block mt-16 btn-primary">
+
+            Send Email
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="py-10 text-center bg-black">
+
+    <h3 class="font-display text-2xl grad-text">
+        Marie Cielo B. Balbuena
+    </h3>
+
+    <p class="text-gray-500 mt-4">
+        Leadership • Discipline • Service
+    </p>
+
+    <p class="text-gray-600 mt-6 text-sm">
+        © 2026 All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+// CERTIFICATE TABS
+const certTabs = document.querySelectorAll(".cert-tab");
+const certContents = document.querySelectorAll(".cert-content");
+
+certTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        const tabName = tab.getAttribute("data-tab");
+        
+        certTabs.forEach(t => t.classList.remove("active"));
+        certContents.forEach(c => c.classList.remove("active"));
+        
+        tab.classList.add("active");
+        document.getElementById(tabName + "-tab").classList.add("active");
+    });
+});
+
+// GALLERY SWIPER CAROUSEL
+const gallerySwiper = new Swiper(".gallerySwiper", {
+    effect: "slide",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
+// ROLE ANIMATION
+
+const roles = [
+    "Future HR Professional",
+    "Student Leader",
+    "University Athlete",
+    "Administrative Professional",
+    "People-Oriented Leader"
+];
+
+let currentRole = 0;
+
+const roleText = document.getElementById("roleCycle");
+
+setInterval(() => {
+
+    roleText.style.opacity = 0;
+
+    setTimeout(() => {
+
+        currentRole++;
+
+        if(currentRole >= roles.length){
+            currentRole = 0;
+        }
+
+        roleText.innerText = roles[currentRole];
+
+        roleText.style.opacity = 1;
+
+    },300);
+
+},3000);
+
+
+// SCROLL REVEAL
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealElements(){
+
+    reveals.forEach(item => {
+
+        const top = item.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100){
+
+            item.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealElements);
+
+revealElements();
+
+
+// SIDE NAV
+
+const sections = document.querySelectorAll("section");
+const navDots = document.querySelectorAll(".side-nav a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+
+        if(scrollY >= sectionTop - 300){
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+    navDots.forEach(dot => {
+
+        dot.classList.remove("active");
+
+        if(dot.getAttribute("href") === "#" + current){
+
+            dot.classList.add("active");
+
+        }
+
+    });
+
+});
+
+
+// TILT EFFECT
+
+const tiltPhoto = document.getElementById("tiltPhoto");
+
+if(tiltPhoto){
+
+    tiltPhoto.addEventListener("mousemove", e => {
+
+        const rect = tiltPhoto.getBoundingClientRect();
+
+        const x = (e.clientX - rect.left) / rect.width;
+        const y = (e.clientY - rect.top) / rect.height;
+
+        const rotateY = (x - 0.5) * 15;
+        const rotateX = (0.5 - y) * 15;
+
+        tiltPhoto.style.transform =
+            `rotateX(${rotateX}deg)
+             rotateY(${rotateY}deg)`;
+
+    });
+
+    tiltPhoto.addEventListener("mouseleave", () => {
+
+        tiltPhoto.style.transform =
+            "rotateX(0deg) rotateY(0deg)";
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
