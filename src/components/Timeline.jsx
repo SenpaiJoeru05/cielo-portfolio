@@ -2,6 +2,7 @@ export default function Timeline() {
   const events = [
     {
       year: '2018',
+      sideNote: 'Started my athletic journey in Arnis.',
       title: 'Started Competing in Arnis',
       subtitle: 'Athletic Beginning',
       description: 'Began training and competing in Arnis during high school, developing discipline, perseverance, and teamwork.',
@@ -9,6 +10,7 @@ export default function Timeline() {
     },
     {
       year: '2022',
+      sideNote: 'Began university education.',
       title: 'Entered Bicol University',
       subtitle: 'University Journey',
       description: 'Started taking Bachelor of Technology and Livelihood Education and became actively involved in student organizations.',
@@ -16,6 +18,7 @@ export default function Timeline() {
     },
     {
       year: '2025',
+      sideNote: 'Took on two leadership roles.',
       title: 'Organization President',
       subtitle: 'Leadership',
       description: 'Became President of the BU Sports Club and President of SIKLAB Dance Troupe, leading members and organizing activities.',
@@ -23,6 +26,7 @@ export default function Timeline() {
     },
     {
       year: '2026',
+      sideNote: 'A new chapter begins.',
       title: 'Completed BTLEd Degree',
       subtitle: 'Graduation',
       description: 'Graduated from Bicol University and prepared to pursue a professional career in Human Resources, Administration, and Virtual Assistance.',
@@ -35,44 +39,44 @@ export default function Timeline() {
       <div className="container">
         <div className="text-center reveal">
           <p className="eyebrow">MY JOURNEY</p>
-          <h2 className="font-display text-5xl font-bold text-white">
+          <h2 className="font-display text-4xl font-bold text-white">
             The journey that shaped
             <span className="grad-text"> who I am today.</span>
           </h2>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-400 mt-4 max-w-xl mx-auto text-sm">
             From athlete to student leader, every chapter built
             the discipline, resilience, and leadership that I now
             bring into my future career.
           </p>
         </div>
 
-        <div className="relative mt-24">
+        <div className="relative mt-16">
           <div className="timeline-line hidden lg:block"></div>
 
           {events.map((event, index) => (
-            <div key={index} className="grid lg:grid-cols-2 gap-10 mb-20 reveal">
+            <div key={index} className="grid lg:grid-cols-2 gap-8 mb-12 reveal">
               {event.align === 'left' ? (
                 <>
-                  <div className="text-right pr-16 hidden lg:block">
-                    <h3 className="text-3xl font-bold text-white">{event.year}</h3>
-                    <p className="text-gray-400 mt-2">{event.description.substring(0, 50)}...</p>
+                  <div className="text-right pr-12 hidden lg:block">
+                    <h3 className="text-2xl font-bold text-white">{event.year}</h3>
+                    <p className="text-gray-400 mt-1 text-sm">{event.sideNote}</p>
                   </div>
-                  <div className="glass rounded-3xl p-8">
-                    <span className="text-purple-400 text-sm uppercase">{event.subtitle}</span>
-                    <h3 className="font-display text-2xl mt-3">{event.title}</h3>
-                    <p className="text-gray-400 mt-4">{event.description}</p>
+                  <div className="glass rounded-2xl p-6">
+                    <span className="text-purple-400 text-xs uppercase tracking-widest">{event.subtitle}</span>
+                    <h3 className="font-display text-xl mt-2 text-white">{event.title}</h3>
+                    <p className="text-gray-400 mt-3 text-sm leading-relaxed">{event.description}</p>
                   </div>
                 </>
               ) : (
                 <>
-                  <div className="glass rounded-3xl p-8">
-                    <span className="text-purple-400 text-sm uppercase">{event.subtitle}</span>
-                    <h3 className="font-display text-2xl mt-3">{event.title}</h3>
-                    <p className="text-gray-400 mt-4">{event.description}</p>
+                  <div className="glass rounded-2xl p-6">
+                    <span className="text-purple-400 text-xs uppercase tracking-widest">{event.subtitle}</span>
+                    <h3 className="font-display text-xl mt-2 text-white">{event.title}</h3>
+                    <p className="text-gray-400 mt-3 text-sm leading-relaxed">{event.description}</p>
                   </div>
-                  <div className="pl-16 hidden lg:block">
-                    <h3 className="text-3xl font-bold text-white">{event.year}</h3>
-                    <p className="text-gray-400 mt-2">{event.description.substring(0, 50)}...</p>
+                  <div className="pl-12 hidden lg:block">
+                    <h3 className="text-2xl font-bold text-white">{event.year}</h3>
+                    <p className="text-gray-400 mt-1 text-sm">{event.sideNote}</p>
                   </div>
                 </>
               )}
