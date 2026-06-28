@@ -5,16 +5,16 @@ export default function Leadership() {
       year: '2025',
       title: 'President',
       organization: 'BU Sports Club',
-      description: 'Led the organization through planning, communication, coordination, and support activities for student-athletes.',
-      skills: ['Team leadership', 'Event organization', 'Member coordination', 'Administrative work']
+      description: 'Led the organization through planning, communication, and coordination — resolving member concerns, managing requests, and keeping operations running smoothly, much like a service desk environment.',
+      skills: ['Problem Resolution', 'Team Coordination', 'Clear Communication', 'Administrative Support']
     },
     {
       image: '/img/siklab.jpg',
       year: '2025',
       title: 'President',
       organization: 'SIKLAB Dance Troupe',
-      description: 'Managed organization activities, coordinated members, and supported programs and events.',
-      skills: ['Team management', 'Event planning', 'Communication', 'Leadership skills']
+      description: 'Managed organization activities, coordinated members, and addressed concerns efficiently — developing the patience, follow-through, and communication skills essential in any support or service desk role.',
+      skills: ['People Management', 'Event Planning', 'Follow-Through', 'Conflict Resolution']
     }
   ];
 

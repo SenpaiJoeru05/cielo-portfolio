@@ -79,10 +79,10 @@ const IconClock = () => (
 
 export default function Skills() {
   const mainSkills = [
-    { icon: 'fa-users',      title: 'Communication', description: 'Effective verbal and written communication skills.' },
-    { icon: 'fa-calendar',   title: 'Organization',  description: 'Scheduling, planning, and administrative support.' },
-    { icon: 'fa-user-group', title: 'Leadership',    description: 'Team management and organizational leadership.' },
-    { icon: 'fa-computer',   title: 'Digital Tools', description: 'Microsoft Office and Google Workspace.' },
+    { icon: 'fa-headset',       title: 'Help Desk Support',  description: 'First-line technical support, ticket logging, and issue resolution.' },
+    { icon: 'fa-computer',      title: 'Troubleshooting',    description: 'Diagnosing hardware, software, and connectivity problems.' },
+    { icon: 'fa-users',         title: 'User Communication', description: 'Explaining technical issues clearly to non-technical users.' },
+    { icon: 'fa-network-wired', title: 'ICT Fundamentals',   description: 'Computer systems, networking basics, and office productivity tools.' },
   ];
 
   const tools = [
@@ -109,43 +109,43 @@ export default function Skills() {
     },
     {
       icon: <IconKeyboard />,
-      label: 'Data Entry',
-      sub: 'Accurate & Fast',
+      label: 'Ticket Management',
+      sub: 'Logging & Tracking',
       glow: 'rgba(56,189,248,0.18)',
       border: 'rgba(56,189,248,0.25)',
     },
     {
-      icon: <IconCalendar />,
-      label: 'Scheduling',
-      sub: 'Planning & Coordination',
-      glow: 'rgba(244,114,182,0.18)',
-      border: 'rgba(244,114,182,0.25)',
+      icon: <IconHeadset />,
+      label: 'Remote Support',
+      sub: 'End-User Assistance',
+      glow: 'rgba(251,191,36,0.18)',
+      border: 'rgba(251,191,36,0.25)',
     },
     {
       icon: <IconBriefcase />,
-      label: 'Admin Support',
-      sub: 'Office Administration',
+      label: 'IT Documentation',
+      sub: 'Reports & SOPs',
       glow: 'rgba(45,212,191,0.18)',
       border: 'rgba(45,212,191,0.25)',
     },
     {
       icon: <IconUsers />,
-      label: 'Team Leadership',
-      sub: 'People Management',
+      label: 'User Communication',
+      sub: 'Clear & Patient',
       glow: 'rgba(167,139,250,0.20)',
       border: 'rgba(167,139,250,0.28)',
     },
     {
-      icon: <IconHeadset />,
-      label: 'Customer Service',
-      sub: 'Client Relations',
-      glow: 'rgba(251,191,36,0.18)',
-      border: 'rgba(251,191,36,0.25)',
+      icon: <IconCalendar />,
+      label: 'Prioritization',
+      sub: 'SLA & Urgency',
+      glow: 'rgba(244,114,182,0.18)',
+      border: 'rgba(244,114,182,0.25)',
     },
     {
       icon: <IconClock />,
       label: 'Time Management',
-      sub: 'Productivity & Focus',
+      sub: 'Fast & Accurate',
       glow: 'rgba(248,113,113,0.18)',
       border: 'rgba(248,113,113,0.25)',
     },
@@ -157,8 +157,8 @@ export default function Skills() {
         <div className="text-center reveal">
           <p className="eyebrow">SKILLS</p>
           <h2 className="font-display text-4xl text-white font-bold">
-            Skills for HR, Administration, and
-            <span className="grad-text"> Virtual Assistance</span>
+            Skills for Help Desk &amp;
+            <span className="grad-text"> Service Desk</span>
           </h2>
         </div>
 

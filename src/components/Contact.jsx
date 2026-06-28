@@ -19,8 +19,8 @@ export default function Contact() {
             Let&apos;s <span className="grad-text">Connect</span>
           </h2>
           <p className="text-gray-400 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
-            Open to opportunities in Human Resources, Administration,
-            Customer Service, and Virtual Assistance.
+            Open to opportunities in Help Desk, Service Desk,
+            IT Support, and entry-level ICT roles.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function Contact() {
         {/* CTA BUTTONS */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 reveal">
           <a
-            href="mailto:mariecielobalbune@gmail.com"
+            href="mailto:mariecielobalbuena@gmail.com"
             className="btn-primary w-full sm:w-auto justify-center"
           >
             <i className="fa-solid fa-envelope text-sm"></i>

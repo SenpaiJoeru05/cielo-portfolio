@@ -13,7 +13,7 @@ export default function Timeline() {
       sideNote: 'Began university education.',
       title: 'Entered Bicol University',
       subtitle: 'University Journey',
-      description: 'Started taking Bachelor of Technology and Livelihood Education and became actively involved in student organizations.',
+      description: 'Started BTLEd majoring in ICT, building a technical foundation in computer systems, networking, and digital tools while becoming actively involved in student organizations.',
       align: 'right'
     },
     {
@@ -29,7 +29,7 @@ export default function Timeline() {
       sideNote: 'A new chapter begins.',
       title: 'Completed BTLEd Degree',
       subtitle: 'Graduation',
-      description: 'Graduated from Bicol University and prepared to pursue a professional career in Human Resources, Administration, and Virtual Assistance.',
+      description: 'Graduated from Bicol University with an ICT major and prepared to pursue a career in Help Desk and Service Desk support, combining technical knowledge with strong communication and customer service experience.',
       align: 'right'
     }
   ];
@@ -44,9 +44,9 @@ export default function Timeline() {
             <span className="grad-text"> who I am today.</span>
           </h2>
           <p className="text-gray-400 mt-4 max-w-xl mx-auto text-sm">
-            From athlete to student leader, every chapter built
-            the discipline, resilience, and leadership that I now
-            bring into my future career.
+            From athlete to ICT graduate, every chapter built the discipline,
+            resilience, and communication skills I now bring to
+            Help Desk and Service Desk work.
           </p>
         </div>
 

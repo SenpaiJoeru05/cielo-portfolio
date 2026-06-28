@@ -16,8 +16,8 @@ export default function Experience() {
       gradient: 'linear-gradient(135deg, #5b21b6 0%, #7c3aed 50%, #a855f7 100%)',
       accentLight: '#f3f0ff',
       accentText: '#6d28d9',
-      description: 'Completed pre-service teaching practicum as part of the BTLEd program. Planned and delivered structured lessons, managed classroom activities, assessed student performance, and applied real-world pedagogical strategies in a public secondary school setting.',
-      skills: ['Lesson Planning', 'Classroom Management', 'Student Assessment', 'Communication', 'Curriculum Development'],
+      description: 'Completed pre-service teaching practicum as part of the BTLEd–ICT program. Explained technical and academic concepts clearly to diverse learners, managed classroom operations, and adapted communication style to ensure understanding — directly transferable to guiding non-technical users in a Help Desk environment.',
+      skills: ['Technical Explanation', 'User-Friendly Communication', 'Classroom Management', 'Student Assessment', 'Problem Solving'],
     },
     {
       icon: <LogoImg src="/img/Potato_Corner_Logo_2023.png" alt="Potato Corner" bg="#2d8a3e" />,
@@ -43,7 +43,7 @@ export default function Experience() {
       accentLight: '#fffbeb',
       accentText: '#b45309',
       description: 'Prepared and served coffee, beverages, and food items with consistency and quality in a fast-paced service environment. Delivered attentive customer service, handled orders accurately, resolved customer concerns, and contributed to a welcoming and efficient daily operation.',
-      skills: ['Barista Skills', 'Customer Service', 'Food & Beverage', 'Order Management', 'Teamwork', 'Hospitality'],
+      skills: ['Customer Service', 'Multi-tasking', 'Order Management', 'Issue Resolution', 'Teamwork', 'Hospitality'],
     },
   ];
 

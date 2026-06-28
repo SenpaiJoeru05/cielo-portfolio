@@ -2,10 +2,10 @@ export default function Achievements() {
   const achievements = [
     { emoji: '👑', title: 'Organization President', description: 'Served as President of two accredited student organizations at Bicol University.' },
     { emoji: '🥋', title: 'University Athlete', description: 'Represented Bicol University in Arnis competitions and athletic events.' },
-    { emoji: '🎓', title: 'Graduate', description: 'Successfully completed Bachelor of Technology and Livelihood Education at Bicol University.' },
+    { emoji: '🎓', title: 'ICT Graduate', description: 'Completed BTLEd Major in ICT at Bicol University — building a technical foundation in computer systems, networking, and digital tools.' },
     { emoji: '🏅', title: 'Medalist', description: 'Earned 40+ medals and recognitions throughout years of athletic competition.' },
     { emoji: '💃', title: 'Dance Leader', description: 'Led SIKLAB Dance Troupe through organizational activities and performances.' },
-    { emoji: '🤝', title: 'Leadership Skills', description: 'Developed communication, organization, and people management skills through leadership roles.' }
+    { emoji: '🤝', title: 'Service-Oriented', description: 'Developed communication, problem-solving, and people management skills — the core qualities of an effective Help Desk and Service Desk professional.' }
   ];
 
   return (
