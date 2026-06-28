@@ -5,11 +5,11 @@ export default function Hero() {
   const tiltPhotoRef = useRef(null);
 
   const roles = [
-    "Future HR Professional",
-    "Student Leader",
-    "University Athlete",
-    "Administrative Professional",
-    "People-Oriented Leader"
+    "Aspiring Help Desk Specialist",
+    "Service Desk Professional",
+    "ICT Graduate",
+    "Tech-Savvy Communicator",
+    "Customer-Focused Problem Solver"
   ];
 
   useEffect(() => {
@@ -61,14 +61,21 @@ export default function Hero() {
             </div>
 
             <p className="mt-5 text-base text-gray-300 max-w-lg leading-relaxed">
-              A fresh graduate, student leader, and university athlete
-              committed to bringing organization, discipline,
-              and people-centered service into Human Resources,
-              Administrative Support, and Virtual Assistance.
+              A BTLEd–ICT graduate with a strong background in customer service
+              and communication, ready to deliver first-line technical support,
+              resolve user issues, and keep operations running smoothly.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start">
-              <a href="#about" className="btn-primary">Explore My Journey</a>
+              <a
+                href="/Marie_Cielo_Balbuena-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                <i className="fa-solid fa-download text-sm"></i>
+                View Resume
+              </a>
               <a href="#contact" className="btn-outline">Contact Me</a>
             </div>
 
@@ -79,8 +86,8 @@ export default function Hero() {
                 <p className="text-xs uppercase text-gray-400 mt-1">Organizations Led</p>
               </div>
               <div className="glass rounded-2xl p-4">
-                <h2 className="text-2xl font-bold grad-text">8+</h2>
-                <p className="text-xs uppercase text-gray-400 mt-1">Years Athlete</p>
+                <h2 className="text-2xl font-bold grad-text">19</h2>
+                <p className="text-xs uppercase text-gray-400 mt-1">Certifications</p>
               </div>
               <div className="glass rounded-2xl p-4">
                 <h2 className="text-2xl font-bold grad-text">2026</h2>

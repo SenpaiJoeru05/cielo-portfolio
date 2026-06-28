@@ -13,9 +13,9 @@ export default function About() {
           <div className="reveal">
             <p className="eyebrow">ABOUT ME</p>
             <h2 className="font-display text-4xl font-bold leading-tight">
-              Leading with
-              <span className="grad-text"> discipline,</span>
-              {' '}service, and organization.
+              Your first call
+              <span className="grad-text"> for tech support,</span>
+              {' '}done right.
             </h2>
 
             <p className="mt-6 text-gray-600 leading-relaxed">
@@ -25,23 +25,23 @@ export default function About() {
             </p>
 
             <p className="mt-4 text-gray-600 leading-relaxed text-sm">
-              As a student leader, university athlete, and customer
-              service professional, I developed the ability to lead,
-              communicate, organize, and support others.
+              My ICT background built a solid foundation in computer systems,
+              software, networking basics, and digital tools — everything
+              needed to diagnose and resolve common technical issues at the
+              first line of support.
             </p>
 
             <p className="mt-4 text-gray-600 leading-relaxed text-sm">
-              Through my leadership roles as President of the
-              BU Sports Club and SIKLAB Dance Troupe, I gained
-              valuable experience in team management, event
-              coordination, communication, and organizational work.
+              Years of customer service experience taught me how to stay calm
+              under pressure, communicate clearly with non-technical users,
+              and resolve concerns efficiently — the core of great Help Desk
+              and Service Desk work.
             </p>
 
             <p className="mt-4 text-gray-600 leading-relaxed text-sm">
-              Today, I aspire to build a career in Human Resources,
-              Administration, and Virtual Assistance where I can
-              contribute my leadership, discipline, and passion
-              for helping people.
+              I am looking for a Help Desk or Service Desk role where I can
+              apply my technical knowledge, patience, and people skills to
+              keep users productive and systems running.
             </p>
 
             <div className="grid grid-cols-3 gap-3 mt-8">

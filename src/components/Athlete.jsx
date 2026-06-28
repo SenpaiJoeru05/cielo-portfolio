@@ -38,16 +38,19 @@ export default function Athlete() {
             </h3>
 
             <p className="text-gray-400 mt-6 leading-relaxed text-sm">
-              As a member of the Bicol University Arnis Team,
-              I represented the university in various competitions,
-              continuously developing discipline, confidence, and resilience.
+              As a member of the Bicol University Arnis Team, I competed across
+              regional and university events — learning to stay composed under
+              pressure, follow structured training protocols, and perform
+              consistently even in high-stress situations. Those same qualities
+              are exactly what Help Desk work demands.
             </p>
 
             <p className="text-gray-400 mt-3 leading-relaxed text-sm">
-              My athletic journey started during high school and
-              continued throughout college, allowing me to earn
-              valuable experiences and achievements both inside
-              and outside the university.
+              Eight years of discipline, repetition, and team coordination built
+              habits I carry into every role: staying calm with frustrated users,
+              following processes step by step, and knowing when to escalate to
+              the right person — just like coordinating with teammates during
+              a match.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">

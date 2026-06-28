@@ -26,11 +26,11 @@ export default function Education() {
       detail: 'Major in Information Communication Technology (ICT)',
       location: 'Legazpi City, Albay',
       year: '2022 – 2026',
+      status: 'Graduate',
       accent: '#7c3aed',
       glow: 'rgba(124,58,237,0.35)',
       accentLight: 'rgba(124,58,237,0.12)',
       iconBg: 'transparent',
-
     },
     {
       level: 'Senior High School',
@@ -40,6 +40,7 @@ export default function Education() {
       detail: '',
       location: 'Tuburan, Ligao City',
       year: '2020 – 2021',
+      status: 'Completer',
       accent: '#a855f7',
       glow: 'rgba(168,85,247,0.30)',
       accentLight: 'rgba(168,85,247,0.10)',
@@ -52,6 +53,7 @@ export default function Education() {
       detail: '',
       location: 'Tuburan, Ligao City',
       year: '2015 – 2019',
+      status: 'Completer',
       accent: '#ec4899',
       glow: 'rgba(236,72,153,0.25)',
       accentLight: 'rgba(236,72,153,0.10)',
@@ -64,6 +66,7 @@ export default function Education() {
       detail: '',
       location: 'San Sebastian, Tarlac City',
       year: '2009 – 2015',
+      status: 'Completer',
       accent: '#f59e0b',
       glow: 'rgba(245,158,11,0.25)',
       accentLight: 'rgba(245,158,11,0.10)',
@@ -141,7 +144,7 @@ export default function Education() {
                         >
                           <p className="text-xs uppercase tracking-widest font-bold" style={{ color: s.accent }}>Year</p>
                           <p className="text-white font-bold text-base mt-0.5 font-display">{s.year}</p>
-                          <p className="text-xs font-semibold mt-0.5" style={{ color: s.accent }}>Graduate</p>
+                          <p className="text-xs font-semibold mt-0.5" style={{ color: s.accent }}>{s.status}</p>
                         </div>
                       </div>
 
